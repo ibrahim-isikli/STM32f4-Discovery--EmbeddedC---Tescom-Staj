@@ -1,0 +1,10 @@
+14:15:03 **** Incremental Build of configuration Debug for project led_on3_shift ****
+make -j12 all 
+arm-none-eabi-size   led_on3_shift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	led_on3_shift.elf
+Finished building: default.size.stdout
+ 
+
+14:15:03 Build Finished. 0 errors, 0 warnings. (took 165ms)
+

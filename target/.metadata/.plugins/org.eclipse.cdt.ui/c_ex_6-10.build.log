@@ -1,0 +1,23 @@
+09:48:08 **** Incremental Build of configuration Debug for project c_ex_6-10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\c_ex_6-10.o" "..\\src\\c_ex_6-10.c" 
+..\src\c_ex_6-10.c: In function 'main':
+..\src\c_ex_6-10.c:31:23: warning: unused variable 'ux' [-Wunused-variable]
+   31 |         unsigned long ux = 25415124;
+      |                       ^~
+..\src\c_ex_6-10.c:29:16: warning: unused variable 'dx' [-Wunused-variable]
+   29 |         double dx =1.1415927;
+      |                ^~
+..\src\c_ex_6-10.c:27:15: warning: unused variable 's' [-Wunused-variable]
+   27 |         short s = 4043;
+      |               ^
+..\src\c_ex_6-10.c:26:14: warning: unused variable 'ax' [-Wunused-variable]
+   26 |         long ax = 1234567890;
+      |              ^~
+..\src\c_ex_6-10.c:25:34: warning: unused variable 'b' [-Wunused-variable]
+   25 |         volatile uint32_t a=125, b=12345;
+      |                                  ^
+gcc -o c_ex_6-10.exe "src\\c_ex_6-10.o" 
+
+09:48:09 Build Finished. 0 errors, 5 warnings. (took 577ms)
+

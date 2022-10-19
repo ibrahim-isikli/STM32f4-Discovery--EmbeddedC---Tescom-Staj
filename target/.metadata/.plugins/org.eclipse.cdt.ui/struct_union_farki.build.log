@@ -1,0 +1,26 @@
+17:23:13 **** Incremental Build of configuration Debug for project struct_union_farki ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_union_farki.o" "..\\src\\struct_union_farki.c" 
+..\src\struct_union_farki.c: In function 'main':
+..\src\struct_union_farki.c:30:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   30 |         printf("size of struct -> %d byte \n", sizeof(struct address_struct));
+      |                                   ~^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                    |           |
+      |                                    int         long long unsigned int
+      |                                   %lld
+..\src\struct_union_farki.c:31:37: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   31 |         printf("size of struct2 -> %d byte \n", sizeof(struct address_struct2));
+      |                                    ~^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                     |           |
+      |                                     int         long long unsigned int
+      |                                    %lld
+..\src\struct_union_farki.c:32:35: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   32 |         printf("size of union -> %d  byte \n", sizeof(union address_union));
+      |                                  ~^            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                   |            |
+      |                                   int          long long unsigned int
+      |                                  %lld
+gcc -o struct_union_farki.exe "src\\struct_union_farki.o" 
+
+17:23:13 Build Finished. 0 errors, 3 warnings. (took 516ms)
+

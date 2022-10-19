@@ -1,0 +1,10 @@
+14:14:59 **** Incremental Build of configuration Debug for project 004float ****
+make -j12 all 
+arm-none-eabi-size   004float.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23716	    476	   1588	  25780	   64b4	004float.elf
+Finished building: default.size.stdout
+ 
+
+14:15:00 Build Finished. 0 errors, 0 warnings. (took 148ms)
+

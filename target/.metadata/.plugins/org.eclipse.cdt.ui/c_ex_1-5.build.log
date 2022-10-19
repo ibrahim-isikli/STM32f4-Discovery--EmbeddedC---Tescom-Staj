@@ -1,0 +1,17 @@
+08:37:09 **** Rebuild of configuration Debug for project c_ex_1-5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\c_ex_1-5.o" "..\\src\\c_ex_1-5.c" 
+..\src\c_ex_1-5.c: In function 'main':
+..\src\c_ex_1-5.c:42:9: warning: type defaults to 'int' in declaration of 'char1' [-Wimplicit-int]
+   42 |   const char1='X'; const char2='L'; const char3='M';
+      |         ^~~~~
+..\src\c_ex_1-5.c:42:26: warning: type defaults to 'int' in declaration of 'char2' [-Wimplicit-int]
+   42 |   const char1='X'; const char2='L'; const char3='M';
+      |                          ^~~~~
+..\src\c_ex_1-5.c:42:43: warning: type defaults to 'int' in declaration of 'char3' [-Wimplicit-int]
+   42 |   const char1='X'; const char2='L'; const char3='M';
+      |                                           ^~~~~
+gcc -o c_ex_1-5.exe "src\\c_ex_1-5.o" 
+
+08:37:09 Build Finished. 0 errors, 3 warnings. (took 563ms)
+

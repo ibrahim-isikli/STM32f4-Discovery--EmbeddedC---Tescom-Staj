@@ -1,0 +1,43 @@
+07:49:14 **** Incremental Build of configuration Debug for project Char_sizeof ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Char_sizeof.o" "..\\src\\Char_sizeof.c" 
+..\src\Char_sizeof.c: In function 'main':
+..\src\Char_sizeof.c:20:40: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   20 |         printf("\nsize of message1--->%d\n",sizeof(message1));
+      |                                       ~^    ~~~~~~~~~~~~~~~~
+      |                                        |    |
+      |                                        int  long long unsigned int
+      |                                       %lld
+..\src\Char_sizeof.c:21:40: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   21 |         printf("\nsize of message2--->%d\n",sizeof(message2));
+      |                                       ~^    ~~~~~~~~~~~~~~~~
+      |                                        |    |
+      |                                        int  long long unsigned int
+      |                                       %lld
+..\src\Char_sizeof.c:23:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   23 |         printf("\nsize of message1--->%d\n",strlen(message1));
+      |                                             ^~~~~~
+..\src\Char_sizeof.c:14:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   13 | #include <stdint.h>
+  +++ |+#include <string.h>
+   14 | void waitExit(void);
+..\src\Char_sizeof.c:23:45: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   23 |         printf("\nsize of message1--->%d\n",strlen(message1));
+      |                                             ^~~~~~
+..\src\Char_sizeof.c:23:45: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\Char_sizeof.c:23:40: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   23 |         printf("\nsize of message1--->%d\n",strlen(message1));
+      |                                       ~^    ~~~~~~~~~~~~~~~~
+      |                                        |    |
+      |                                        int  long long unsigned int
+      |                                       %lld
+..\src\Char_sizeof.c:24:40: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   24 |         printf("\nsize of message2--->%d\n",strlen(message2));
+      |                                       ~^    ~~~~~~~~~~~~~~~~
+      |                                        |    |
+      |                                        int  long long unsigned int
+      |                                       %lld
+gcc -o Char_sizeof.exe "src\\Char_sizeof.o" 
+
+07:49:14 Build Finished. 0 errors, 6 warnings. (took 573ms)
+

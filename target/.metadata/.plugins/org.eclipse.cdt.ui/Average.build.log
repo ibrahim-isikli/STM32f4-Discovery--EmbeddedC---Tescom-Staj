@@ -1,0 +1,9 @@
+11:00:18 **** Incremental Build of configuration Debug for project Average ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ST/STM32CubeIDE_1.10.0/STM32CubeIDE//plugins/com.st.stm32cube.ide.jre.win64_2.2.0.202203101208/jre/bin/server;C:/ST/STM32CubeIDE_1.10.0/STM32CubeIDE//plugins/com.st.stm32cube.ide.jre.win64_2.2.0.202203101208/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MATLAB\R2021b\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\ibrahim\AppData\Local\Microsoft\WindowsApps;C:\Users\ibrahim\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ibrahim\.dotnet\tools;C:\Program Files\mingw32\bin;C:\msys64\usr\bin;C:\Program Files\mingw32\i686-w64-mingw32\bin;C:\ST\STM32CubeIDE_1.10.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\bin;C:\ST\STM32CubeIDE_1.10.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\bin;;C:\ST\STM32CubeIDE_1.10.0\STM32CubeIDE]
+
+11:00:18 Build Failed. 1 errors, 0 warnings. (took 45ms)
+

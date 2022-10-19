@@ -1,0 +1,10 @@
+14:15:00 **** Incremental Build of configuration Debug for project 009Typedef ****
+make -j12 all 
+arm-none-eabi-size   009Typedef.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6264	    108	   1588	   7960	   1f18	009Typedef.elf
+Finished building: default.size.stdout
+ 
+
+14:15:01 Build Finished. 0 errors, 0 warnings. (took 153ms)
+

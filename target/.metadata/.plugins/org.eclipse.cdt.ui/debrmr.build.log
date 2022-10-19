@@ -1,0 +1,51 @@
+11:19:52 **** Build of configuration Debug for project debrmr ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:45:2: warning: data definition has no type or storage class
+   45 |  *ptr = 0xff; // 7.bitteki saklanan deger
+      |  ^
+../Src/main.c:45:3: warning: type defaults to 'int' in declaration of 'ptr' [-Wimplicit-int]
+   45 |  *ptr = 0xff; // 7.bitteki saklanan deger
+      |   ^~~
+../Src/main.c:45:3: error: conflicting types for 'ptr'
+../Src/main.c:44:11: note: previous definition of 'ptr' was here
+   44 |  uint8_t *ptr = (uint8_t*)0x20000200;  // 7.bit
+      |           ^~~
+../Src/main.c:45:9: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   45 |  *ptr = 0xff; // 7.bitteki saklanan deger
+      |         ^~~~
+../Src/main.c:49:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before '&=' token
+   49 |  *ptr &= ~(1 << 7); // 7.bit reset
+      |       ^~
+../Src/main.c:52:2: warning: data definition has no type or storage class
+   52 |  *ptr = 0xFF;
+      |  ^
+../Src/main.c:52:3: warning: type defaults to 'int' in declaration of 'ptr' [-Wimplicit-int]
+   52 |  *ptr = 0xFF;
+      |   ^~~
+../Src/main.c:52:3: error: conflicting types for 'ptr'
+../Src/main.c:44:11: note: previous definition of 'ptr' was here
+   44 |  uint8_t *ptr = (uint8_t*)0x20000200;  // 7.bit
+      |           ^~~
+../Src/main.c:52:9: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   52 |  *ptr = 0xFF;
+      |         ^~~~
+../Src/main.c:54:2: warning: data definition has no type or storage class
+   54 |  *alias_address = 0; // 7. bit reset
+      |  ^
+../Src/main.c:54:3: warning: type defaults to 'int' in declaration of 'alias_address' [-Wimplicit-int]
+   54 |  *alias_address = 0; // 7. bit reset
+      |   ^~~~~~~~~~~~~
+../Src/main.c:54:3: error: conflicting types for 'alias_address'
+../Src/main.c:53:11: note: previous definition of 'alias_address' was here
+   53 |  uint8_t *alias_address = (uint8_t*)  (ALIAS_BASE+(32*(0x20000200 - BITBAND_BASE)) + 7*4);
+      |           ^~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:19:52 Build Failed. 6 errors, 8 warnings. (took 421ms)
+

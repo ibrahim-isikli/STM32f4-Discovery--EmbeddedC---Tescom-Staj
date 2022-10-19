@@ -1,0 +1,19 @@
+16:32:53 **** Incremental Build of configuration Debug for project structlar ****
+make all 
+Building file: ../src/structlar.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/structlar.d" -MT"src/structlar.o" -o "src/structlar.o" "../src/structlar.c"
+../src/structlar.c: In function 'main':
+../src/structlar.c:21:13: warning: unused variable 'bmw' [-Wunused-variable]
+  struct car bmw={0,0};
+             ^~~
+Finished building: ../src/structlar.c
+ 
+Building target: structlar
+Invoking: Cross GCC Linker
+gcc  -o "structlar" ./src/structlar.o   
+Finished building target: structlar
+ 
+
+16:32:54 Build Finished. 0 errors, 1 warnings. (took 602ms)
+

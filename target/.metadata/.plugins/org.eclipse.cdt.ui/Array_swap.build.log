@@ -1,0 +1,24 @@
+15:38:33 **** Incremental Build of configuration Debug for project Array_swap ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_swap.o" "..\\src\\Array_swap.c" 
+..\src\Array_swap.c: In function 'main':
+..\src\Array_swap.c:44:22: warning: passing argument 1 of 'displayArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   44 |         displayArray(array1,nItems1);
+      |                      ^~~~~~
+      |                      |
+      |                      int32_t * {aka int *}
+..\src\Array_swap.c:15:28: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int32_t *' {aka 'int *'}
+   15 | void displayArray(uint8_t *pArray1, uint32_t nitem);
+      |                   ~~~~~~~~~^~~~~~~
+..\src\Array_swap.c:46:22: warning: passing argument 1 of 'displayArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |         displayArray(array2,nItems2);
+      |                      ^~~~~~
+      |                      |
+      |                      int32_t * {aka int *}
+..\src\Array_swap.c:15:28: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int32_t *' {aka 'int *'}
+   15 | void displayArray(uint8_t *pArray1, uint32_t nitem);
+      |                   ~~~~~~~~~^~~~~~~
+gcc -o Array_swap.exe "src\\Array_swap.o" 
+
+15:38:33 Build Finished. 0 errors, 2 warnings. (took 385ms)
+

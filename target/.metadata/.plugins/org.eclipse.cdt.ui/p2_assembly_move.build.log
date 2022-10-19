@@ -1,0 +1,10 @@
+14:53:14 **** Incremental Build of configuration Debug for project p2_assembly_move ****
+make -j12 all 
+arm-none-eabi-size   p2_assembly_move.elf 
+   text	   data	    bss	    dec	    hex	filename
+    684	      8	   1568	   2260	    8d4	p2_assembly_move.elf
+Finished building: default.size.stdout
+ 
+
+14:53:14 Build Finished. 0 errors, 0 warnings. (took 167ms)
+

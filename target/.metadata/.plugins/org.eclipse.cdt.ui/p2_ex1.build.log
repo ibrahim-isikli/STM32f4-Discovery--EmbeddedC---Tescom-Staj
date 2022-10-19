@@ -1,0 +1,11 @@
+10:04:42 **** Clean-only build of configuration Debug for project p2_ex1 ****
+make -j12 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf default.size.stdout p2_ex1.elf p2_ex1.list p2_ex1.map
+rm: can't remove 'p2_ex1.elf': Permission denied
+make: [makefile:79: clean] Error 1 (ignored)
+ 
+
+10:04:42 Build Finished. 0 errors, 0 warnings. (took 318ms)
+

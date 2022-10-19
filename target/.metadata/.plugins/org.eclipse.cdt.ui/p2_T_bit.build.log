@@ -1,0 +1,10 @@
+16:44:37 **** Incremental Build of configuration Debug for project p2_T_bit ****
+make -j12 all 
+arm-none-eabi-size   p2_T_bit.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3884	    108	   1588	   5580	   15cc	p2_T_bit.elf
+Finished building: default.size.stdout
+ 
+
+16:44:37 Build Finished. 0 errors, 0 warnings. (took 158ms)
+
